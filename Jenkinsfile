@@ -40,7 +40,7 @@ pipeline {
                 milestone(1)
                 script {
                     kubernetesDeploy(
-                        configs: 'train-schedule-kube.yml'               
+                        configs: 'train-schedule-kube.yaml'               
                     )
                     
                 }
