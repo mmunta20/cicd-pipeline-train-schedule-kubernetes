@@ -38,7 +38,8 @@ pipeline {
             steps {
                 input 'Deploy to Production?'
                     kubernetesDeploy(
-                        configs: 'train-schedule-kube.yaml'               
+                        configs: 'train-schedule-kube.yaml', 
+                        kubeconfigId: 'my-kubeconfig'
                     )
             }
         }
